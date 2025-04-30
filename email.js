@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const templateParams = {
                 name: "Shiva Kumar", 
                 from_name: name,   
-                message: message,    
+                message: message,
+                subject:subject,
                 mobile: mobile || "Not provided",
                 email: email        
             };
