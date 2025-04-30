@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value || "Portfolio Contact Request";
+            // const subject = document.getElementById('subject').value || "Portfolio Contact Request";
             const message = document.getElementById('message').value;
             const mobile = document.getElementById('mobile') ? document.getElementById('mobile').value : "";
             
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 name: "Shiva Kumar", 
                 from_name: name,   
                 message: message,
-                subject:subject,
+                // subject:subject,
                 mobile: mobile || "Not provided",
                 email: email        
             };
