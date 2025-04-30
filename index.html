@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiva Kumar | Python Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- In the head section, keep it in this order -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="/email.js"></script>
+    <script src="/script.js"></script>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+    
+    <!-- Code lines animation -->
+    <div class="code-line"></div>
+    <div class="code-line"></div>
+    <div class="code-line"></div>
+    <div class="code-line"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Python<span>Portfolio</span></a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animated-text">Hi, I'm <span class="highlight">Shiva Kumar</span></h1>
+                <h2 class="animated-subtext">Python Backend Developer</h2>
+                <p class="animated-paragraph">Building scalable, reliable, and efficient backend solutions with Django, REST APIs, and modern Python practices.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="/photo3.jpg" alt="Shiva Kumar" class="profile-img">
+                    <div class="tech-icons">
+                        <i class="fab fa-python spin"></i>
+                        <i class="fab fa-js spin"></i>
+                        <i class="fab fa-html5 spin"></i>
+                        <i class="fab fa-css3-alt spin"></i>
+                        <i class="fab fa-git-alt spin"></i>
+                        <i class="fab fa-docker spin"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Python Developer with 1.5+ Years of Experience</h3>
+                    <p>I specialize in designing and implementing scalable backend solutions using Django and REST Framework. My passion lies in building efficient APIs, database optimizations, and creating secure authentication systems that drive business growth.</p>
+                    <p>With expertise in Python, Django, PostgreSQL, and various modern development tools, I help organizations achieve seamless integrations and reliable backend infrastructure.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="500">0</span>+
+                            <span class="stat-text">Daily Transactions</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="1.5">0</span>+
+                            <span class="stat-text">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="15">0</span>+
+                            <span class="stat-text">Technologies Used</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="/photo.jpg" alt="About Me">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My <span>Skills</span></h2>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-percent="90">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="75">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="80">
+                            <div class="skill-info">
+                                <span>HTML5/CSS3</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3><i class="fas fa-laptop-code"></i> Frameworks & Libraries</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-percent="95">
+                            <div class="skill-info">
+                                <span>Django</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="90">
+                            <div class="skill-info">
+                                <span>Django REST Framework</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="85">
+                            <div class="skill-info">
+                                <span>Pandas/NumPy</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3><i class="fas fa-database"></i> Databases & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-percent="90">
+                            <div class="skill-info">
+                                <span>PostgreSQL</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="85">
+                            <div class="skill-info">
+                                <span>MySQL</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="80">
+                            <div class="skill-info">
+                                <span>Query Optimization</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3><i class="fas fa-tools"></i> Dev Tools & Methods</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-percent="85">
+                            <div class="skill-info">
+                                <span>Git</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="80">
+                            <div class="skill-info">
+                                <span>Docker</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="85">
+                            <div class="skill-info">
+                                <span>JWT Authentication</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="85">
+                            <div class="skill-info">
+                                <span>cron job</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My <span>Projects</span></h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/aaroundme.webp" alt="Location-Based B2B Marketplace">
+                        <div class="project-links">
+                            <a href="https://www.business.aroundme.co.in/" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Around Me — Location-Based B2B Marketplace</h3>
+                        <p>Built scalable B2B platform connecting 500+ merchants with 1,000+ customers through location-based services with 99.8% mapping accuracy.</p>
+                        <div class="project-tech">
+                            <span>Django</span>
+                            <span>REST Framework</span>
+                            <span>PostgreSQL</span>
+                            <span>JWT</span>
+                            <span>Geolocation APIs</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/jewel.jpeg" alt="Jewellery Store CRM">
+                        <div class="project-links">
+                            <a href="https://jewel.accountiez.com/" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Jewellery Store CRM & Feedback System</h3>
+                        <p>Developed CRM managing 5,000+ customer records across 3 locations with sales tracking module that increased follow-up conversions by 25%.</p>
+                        <div class="project-tech">
+                            <span>Django</span>
+                            <span>Django REST Framework</span>
+                            <span>JWT</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/dits.jpeg" alt="HR Management System">
+                        <div class="project-links">
+                            <a href="https://management.divsolution.com/login" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>HR Management System</h3>
+                        <p>Built HR platform managing 200+ employee records with IP-based authentication and multi-factor login security.</p>
+                        <div class="project-tech">
+                            <span>Django</span>
+                            <span>Python</span>
+                            <span>JavaScript</span>
+                            <span>HTML5/CSS</span>
+                            <span>Pandas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work <span>Experience</span></h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">November 2023 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Python Developer</h3>
+                        <h4>Div International Technology Services, Hyderabad</h4>
+                        <p>Developing enterprise CRM applications and REST APIs for business solutions.</p>
+                        <ul>
+                            <li>Developed enterprise CRM applications processing 1,000+ daily transactions using Django and REST Framework</li>
+                            <li>Created custom serializers that reduced data validation errors by 75% and improved data integrity</li>
+                            <li>Implemented JWT authentication system that decreased security incidents by 95%</li>
+                            <li>Built dynamic dashboards integrating data from 5+ sources for real-time business intelligence</li>
+                            <li>Designed RESTful APIs with Swagger documentation accelerating third-party integrations by 30%</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">May 2023 - October 2023</div>
+                    <div class="timeline-content">
+                        <h3>Junior Python Developer</h3>
+                        <h4>Vcube Software Solutions, Hyderabad</h4>
+                        <p>Built web applications and managed development teams for client projects.</p>
+                        <ul>
+                            <li>Led 5-member development team after promotion from intern within first month</li>
+                            <li>Increased website traffic by 45% through Django and JavaScript implementation</li>
+                            <li>Built containerized Python IDE web application using Docker technology</li>
+                            <li>Developed training management system for tracking 200+ students across 15+ courses</li>
+                            <li>Resolved 30+ critical bugs improving overall system stability by 75%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Snippet Section -->
+    <section class="code-example">
+        <div class="container">
+            <h2 class="section-title">Code <span>Sample</span></h2>
+            <div class="code-snippet">
+<span class="code-keyword">from</span> rest_framework <span class="code-keyword">import</span> serializers
+<span class="code-keyword">from</span> django.contrib.auth.models <span class="code-keyword">import</span> User
+<span class="code-keyword">from</span> .models <span class="code-keyword">import</span> Product, Order
+
+<span class="code-comment"># Custom Product Serializer with validation</span>
+<span class="code-keyword">class</span> <span class="code-function">ProductSerializer</span>(serializers.ModelSerializer):
+    stock_status = serializers.SerializerMethodField()
+    
+    <span class="code-keyword">class</span> Meta:
+        model = Product
+        fields = ['id', 'name', 'description', 'price', 'category', 'stock', 'stock_status']
+    
+    <span class="code-keyword">def</span> <span class="code-function">get_stock_status</span>(self, obj):
+        <span class="code-keyword">if</span> obj.stock > <span class="code-number">10</span>:
+            <span class="code-keyword">return</span> <span class="code-string">"In Stock"</span>
+        <span class="code-keyword">elif</span> obj.stock > <span class="code-number">0</span>:
+            <span class="code-keyword">return</span> <span class="code-string">"Low Stock"</span>
+        <span class="code-keyword">else</span>:
+            <span class="code-keyword">return</span> <span class="code-string">"Out of Stock"</span>
+    
+    <span class="code-keyword">def</span> <span class="code-function">validate_price</span>(self, value):
+        <span class="code-keyword">if</span> value <= <span class="code-number">0</span>:
+            <span class="code-keyword">raise</span> serializers.ValidationError(<span class="code-string">"Price must be greater than zero."</span>)
+        <span class="code-keyword">return</span> value
+</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's talk about your project</h3>
+                    <p>I'm currently available for freelance work or full-time positions. Feel free to reach out to discuss how I can help with your Python development needs.</p>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>shivayadav12088@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 9505608974</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Hyderabad, India</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/shiva-kumar-0464a628b"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-dev"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">    
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="mobile" placeholder="Your Mobile Number">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">Python<span>Portfolio</span></a>
+                    <p>Building scalable and efficient backend solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-tech">
+                    <h3>Technologies</h3>
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>REST API</span>
+                        <span>PostgreSQL</span>
+                        <span>MySQL</span>
+                        <span>JWT</span>
+                        <span>Docker</span>
+                        <span>Git</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year">2025</span> Shiva Kumar. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
