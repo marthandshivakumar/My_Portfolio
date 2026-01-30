@@ -7,22 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <!-- In the head section, keep it in this order -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="/email.js"></script>
-    <script src="/script.js"></script>
 </head>
 <body>
     <!-- Animated Background -->
     <div class="animated-bg"></div>
-    
-    <!-- Code lines animation -->
-    <div class="code-line"></div>
-    <div class="code-line"></div>
-    <div class="code-line"></div>
-    <div class="code-line"></div>
-    
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -35,7 +24,7 @@
                 <a href="#experience">Experience</a>
                 <a href="#contact">Contact</a>
             </div>
-            <button class="hamburger">
+            <button class="hamburger" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -57,7 +46,7 @@
             </div>
             <div class="hero-image">
                 <div class="image-container">
-                    <img src="/photo3.jpg" alt="Shiva Kumar" class="profile-img">
+                    <img src="photo3.jpg" alt="Shiva Kumar" class="profile-img">
                     <div class="tech-icons">
                         <i class="fab fa-python spin"></i>
                         <i class="fab fa-js spin"></i>
@@ -77,7 +66,7 @@
             <h2 class="section-title">About <span>Me</span></h2>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Python Developer with 1.5+ Years of Experience</h3>
+                    <h3>Python Developer with 2+ Years of Experience</h3>
                     <p>I specialize in designing and implementing scalable backend solutions using Django and REST Framework. My passion lies in building efficient APIs, database optimizations, and creating secure authentication systems that drive business growth.</p>
                     <p>With expertise in Python, Django, PostgreSQL, and various modern development tools, I help organizations achieve seamless integrations and reliable backend infrastructure.</p>
                     <div class="about-stats">
@@ -86,7 +75,7 @@
                             <span class="stat-text">Daily Transactions</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number" data-count="1.5">0</span>+
+                            <span class="stat-number" data-count="2">0</span>+
                             <span class="stat-text">Years Experience</span>
                         </div>
                         <div class="stat-item">
@@ -97,7 +86,7 @@
                 </div>
                 <div class="about-image">
                     <div class="image-frame">
-                        <img src="/photo.jpg" alt="About Me">
+                        <img src="photo.jpg" alt="About Me">
                     </div>
                 </div>
             </div>
@@ -110,143 +99,54 @@
             <h2 class="section-title">My <span>Skills</span></h2>
             <div class="skills-container">
                 <div class="skills-category">
-                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <h3><i class="fas fa-code"></i> Programming</h3>
                     <div class="skill-items">
-                        <div class="skill-item" data-percent="90">
-                            <div class="skill-info">
-                                <span>Python</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-percent="75">
-                            <div class="skill-info">
-                                <span>JavaScript</span>
-                                <span>75%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-percent="80">
-                            <div class="skill-info">
-                                <span>HTML5/CSS3</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress"></div>
-                            </div>
-                        </div>
+                        <div class="skill-item"><div class="skill-info"><span>Python</span><span>Expert</span></div></div>
+                        <div class="skill-item"><div class="skill-info"><span>JavaScript</span><span>Proficient</span></div></div>
+                        <div class="skill-item"><div class="skill-info"><span>HTML5</span><span>Proficient</span></div></div>
+                        <div class="skill-item"><div class="skill-info"><span>CSS3</span><span>Proficient</span></div></div>
                     </div>
                 </div>
-                
+
                 <div class="skills-category">
                     <h3><i class="fas fa-laptop-code"></i> Frameworks & Libraries</h3>
                     <div class="skill-items">
-                        <div class="skill-item" data-percent="95">
-                            <div class="skill-info">
-                                <span>Django</span>
-                                <span>95%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-percent="90">
-                            <div class="skill-info">
-                                <span>Django REST Framework</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-percent="85">
-                            <div class="skill-info">
-                                <span>Pandas/NumPy</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress"></div>
-                            </div>
-                        </div>
+                        <div class="skill-item"><div class="skill-info"><span>Django</span><span>Expert</span></div></div>
+                        <div class="skill-item"><div class="skill-info"><span>Django REST Framework</span><span>Expert</span></div></div>
+                        <div class="skill-item"><div class="skill-info"><span>React.js</span><span>Proficient</span></div></div>
+                        <div class="skill-item"><div class="skill-info"><span>Pandas</span><span>Proficient</span></div></div>
+                        <div class="skill-item"><div class="skill-info"><span>NumPy</span><span>Proficient</span></div></div>
+                        <div class="skill-item"><div class="skill-info"><span>ReportLab</span><span>Working</span></div></div>
                     </div>
                 </div>
-                
+
                 <div class="skills-category">
-                    <h3><i class="fas fa-database"></i> Databases & Tools</h3>
+                    <h3><i class="fas fa-database"></i> Databases</h3>
                     <div class="skill-items">
-                        <div class="skill-item" data-percent="90">
-                            <div class="skill-info">
-                                <span>PostgreSQL</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-percent="85">
-                            <div class="skill-info">
-                                <span>MySQL</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-percent="80">
-                            <div class="skill-info">
-                                <span>Query Optimization</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress"></div>
-                            </div>
-                        </div>
+                        <div class="skill-item"><div class="skill-info"><span>PostgreSQL</span><span>Expert</span></div></div>
+                        <div class="skill-item"><div class="skill-info"><span>MySQL</span><span>Proficient</span></div></div>
                     </div>
                 </div>
-                
+
                 <div class="skills-category">
-                    <h3><i class="fas fa-tools"></i> Dev Tools & Methods</h3>
+                    <h3><i class="fas fa-tools"></i> Tools & Infrastructure</h3>
                     <div class="skill-items">
-                        <div class="skill-item" data-percent="85">
-                            <div class="skill-info">
-                                <span>Git</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-percent="80">
-                            <div class="skill-info">
-                                <span>Docker</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-percent="85">
-                            <div class="skill-info">
-                                <span>JWT Authentication</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-percent="85">
-                            <div class="skill-info">
-                                <span>cron job</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress"></div>
-                            </div>
-                        </div>
+                        <div class="skill-item"><div class="skill-info"><span>Git</span><span>Expert</span></div></div>
+                        <div class="skill-item"><div class="skill-info"><span>Docker</span><span>Proficient</span></div></div>
+                        <div class="skill-item"><div class="skill-info"><span>JWT</span><span>Proficient</span></div></div>
+                        <div class="skill-item"><div class="skill-info"><span>Swagger / drf_yasg</span><span>Proficient</span></div></div>
+                        <div class="skill-item"><div class="skill-info"><span>Celery</span><span>Working</span></div></div>
+                        <div class="skill-item"><div class="skill-info"><span>Web sockets</span><span>Working</span></div></div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3><i class="fas fa-award"></i> Expertise</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><div class="skill-info"><span>REST APIs</span><span>Design & Scale</span></div></div>
+                        <div class="skill-item"><div class="skill-info"><span>Email Campaign Systems</span><span>Deliverability & Integrations</span></div></div>
+                        <div class="skill-item"><div class="skill-info"><span>OAuth</span><span>Authentication</span></div></div>
+                        <div class="skill-item"><div class="skill-info"><span>Geolocation Services</span><span>Mapping & APIs</span></div></div>
                     </div>
                 </div>
             </div>
@@ -258,64 +158,125 @@
         <div class="container">
             <h2 class="section-title">My <span>Projects</span></h2>
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="/aaroundme.webp" alt="Location-Based B2B Marketplace">
-                        <div class="project-links">
-                            <a href="https://www.business.aroundme.co.in/" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                <div class="project-card" tabindex="0">
+                    <div class="project-inner">
+                        <div class="project-front">
+                            <div class="project-image">
+                                <img src="aaroundme.webp" alt="Location-Based B2B Marketplace" loading="lazy">
+                                <div class="project-links">
+                                    <a href="https://www.business.aroundme.co.in/" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Around Me — Location-Based B2B Marketplace</h3>
-                        <p>Built scalable B2B platform connecting 500+ merchants with 1,000+ customers through location-based services with 99.8% mapping accuracy.</p>
-                        <div class="project-tech">
-                            <span>Django</span>
-                            <span>REST Framework</span>
-                            <span>PostgreSQL</span>
-                            <span>JWT</span>
-                            <span>Geolocation APIs</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="/jewel.jpeg" alt="Jewellery Store CRM">
-                        <div class="project-links">
-                            <a href="https://jewel.accountiez.com/" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Jewellery Store CRM & Feedback System</h3>
-                        <p>Developed CRM managing 5,000+ customer records across 3 locations with sales tracking module that increased follow-up conversions by 25%.</p>
-                        <div class="project-tech">
-                            <span>Django</span>
-                            <span>Django REST Framework</span>
-                            <span>JWT</span>
-                            <span>PostgreSQL</span>
+                        <div class="project-back">
+                            <div class="project-info">
+                                <h3>Around Me — Location-Based B2B Marketplace</h3>
+                                <p>Built scalable B2B platform connecting 500+ merchants with 1,000+ customers through location-based services with 99.8% mapping accuracy.</p>
+                                <div class="project-tech">
+                                    <span>Django</span>
+                                    <span>REST Framework</span>
+                                    <span>PostgreSQL</span>
+                                    <span>JWT</span>
+                                    <span>Geolocation APIs</span>
+                                </div>
+                                <div class="project-actions">
+                                    <a href="https://www.business.aroundme.co.in/" class="btn btn-secondary">Live</a>
+                                    <a href="#" class="btn btn-primary">Code</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="/dits.jpeg" alt="HR Management System">
-                        <div class="project-links">
-                            <a href="https://management.divsolution.com/login" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                <div class="project-card" tabindex="0">
+                    <div class="project-inner">
+                        <div class="project-front">
+                            <div class="project-image">
+                                <img src="jewel.jpeg" alt="Jewellery Store CRM" loading="lazy">
+                                <div class="project-links">
+                                    <a href="https://jewel.accountiez.com/" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-back">
+                            <div class="project-info">
+                                <h3>Jewellery Store CRM & Feedback System</h3>
+                                <p>Developed CRM managing 5,000+ customer records across 3 locations with sales tracking module that increased follow-up conversions by 25%.</p>
+                                <div class="project-tech">
+                                    <span>Django</span>
+                                    <span>Django REST Framework</span>
+                                    <span>JWT</span>
+                                    <span>PostgreSQL</span>
+                                </div>
+                                <div class="project-actions">
+                                    <a href="https://jewel.accountiez.com/" class="btn btn-secondary">Live</a>
+                                    <a href="#" class="btn btn-primary">Code</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-info">
-                        <h3>HR Management System</h3>
-                        <p>Built HR platform managing 200+ employee records with IP-based authentication and multi-factor login security.</p>
-                        <div class="project-tech">
-                            <span>Django</span>
-                            <span>Python</span>
-                            <span>JavaScript</span>
-                            <span>HTML5/CSS</span>
-                            <span>Pandas</span>
+                </div>
+                
+                <div class="project-card" tabindex="0">
+                    <div class="project-inner">
+                        <div class="project-front">
+                            <div class="project-image">
+                                <img src="dits.jpeg" alt="HR Management System" loading="lazy">
+                                <div class="project-links">
+                                    <a href="https://management.divsolution.com/login" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-back">
+                            <div class="project-info">
+                                <h3>HR Management System</h3>
+                                <p>Built HR platform managing 200+ employee records with IP-based authentication and multi-factor login security.</p>
+                                <div class="project-tech">
+                                    <span>Django</span>
+                                    <span>Python</span>
+                                    <span>JavaScript</span>
+                                    <span>HTML5/CSS</span>
+                                    <span>Pandas</span>
+                                </div>
+                                <div class="project-actions">
+                                    <a href="https://management.divsolution.com/login" class="btn btn-secondary">Live</a>
+                                    <a href="#" class="btn btn-primary">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" tabindex="0">
+                    <div class="project-inner">
+                        <div class="project-front">
+                            <div class="project-image">
+                                <img src="madafillate.svg" alt="Madafillate - Email Marketing CRM" loading="lazy">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-back">
+                            <div class="project-info">
+                                <h3>Madafillate — Email Marketing CRM</h3>
+                                <p>Enterprise-grade CRM focused on email campaign management, automated delivery, and multi-provider integrations.</p>
+                                <div class="project-tech">
+                                    <span>Python</span>
+                                    <span>Django</span>
+                                    <span>REST API</span>
+                                    <span>Gmail / Outlook / AWS SES</span>
+                                    <span>SMTP</span>
+                                </div>
+                                <div class="project-actions">
+                                    <a href="#" class="btn btn-secondary">Live</a>
+                                    <a href="#" class="btn btn-primary">Code</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -326,39 +287,72 @@
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title">Work <span>Experience</span></h2>
+            <div class="experience-header">
+                <h2 class="section-title">Work <span>Experience</span></h2>
+                <button id="toggleExperience" class="btn btn-secondary btn-small" aria-pressed="false">Show All</button>
+            </div>
             <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">November 2023 - Present</div>
+                <div class="timeline-item" tabindex="0">
+                    <div class="timeline-date">September 2025 - January 2026</div>
                     <div class="timeline-content">
-                        <h3>Python Developer</h3>
-                        <h4>Div International Technology Services, Hyderabad</h4>
-                        <p>Developing enterprise CRM applications and REST APIs for business solutions.</p>
-                        <ul>
-                            <li>Developed enterprise CRM applications processing 1,000+ daily transactions using Django and REST Framework</li>
-                            <li>Created custom serializers that reduced data validation errors by 75% and improved data integrity</li>
-                            <li>Implemented JWT authentication system that decreased security incidents by 95%</li>
-                            <li>Built dynamic dashboards integrating data from 5+ sources for real-time business intelligence</li>
-                            <li>Designed RESTful APIs with Swagger documentation accelerating third-party integrations by 30%</li>
-                        </ul>
+                        <div class="timeline-head" role="button" aria-expanded="false" tabindex="0">
+                            <h3>Python Full-Stack Developer</h3>
+                            <h4>Info-Science Labs</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Working on an enterprise-grade CRM focused on email campaign management and automated email delivery.</p>
+                            <div class="experience-tech"><strong>Technologies:</strong> <span>Python</span>, <span>Django</span>, <span>REST API</span>, <span>React.js</span>, <span>Material UI</span>, <span>AWS SES</span>, <span>SMTP</span>, <span>Gmail/Outlook APIs</span>, <span>Celery</span></div>
+                            <ul>
+                                <li>Implemented multi-provider email integrations including Gmail, Outlook, AWS SES, and SMTP servers.</li>
+                                <li>Designed dynamic email templates, credit-based billing, campaign scheduling, and IP warm-up processes.</li>
+                                <li>Built scalable REST APIs and a modern React frontend using Material UI.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" tabindex="0">
+                    <div class="timeline-date">November 2023 - May 2025</div>
+                    <div class="timeline-content">
+                        <div class="timeline-head" role="button" aria-expanded="false" tabindex="0">
+                            <h3>Python Developer</h3>
+                            <h4>Div International Technology Services, Hyderabad</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Developing enterprise CRM applications and REST APIs for business solutions.</p>
+                            <div class="experience-tech"><strong>Technologies:</strong> <span>Python</span>, <span>Django</span>, <span>Django REST Framework</span>, <span>PostgreSQL</span>, <span>JWT</span>, <span>Swagger</span>, <span>Docker</span></div>
+                            <ul>
+                                <li>Developed enterprise CRM applications processing 1,000+ daily transactions using Django and REST Framework</li>
+                                <li>Created custom serializers that reduced data validation errors by 75% and improved data integrity</li>
+                                <li>Implemented JWT authentication system that decreased security incidents by 95%</li>
+                                <li>Built dynamic dashboards integrating data from 5+ sources for real-time business intelligence</li>
+                                <li>Designed RESTful APIs with Swagger documentation accelerating third-party integrations by 30%</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="timeline-item">
+                <div class="timeline-item" tabindex="0">
                     <div class="timeline-date">May 2023 - October 2023</div>
                     <div class="timeline-content">
-                        <h3>Junior Python Developer</h3>
-                        <h4>Vcube Software Solutions, Hyderabad</h4>
-                        <p>Built web applications and managed development teams for client projects.</p>
-                        <ul>
-                            <li>Led 5-member development team after promotion from intern within first month</li>
-                            <li>Increased website traffic by 45% through Django and JavaScript implementation</li>
-                            <li>Built containerized Python IDE web application using Docker technology</li>
-                            <li>Developed training management system for tracking 200+ students across 15+ courses</li>
-                            <li>Resolved 30+ critical bugs improving overall system stability by 75%</li>
-                        </ul>
+                        <div class="timeline-head" role="button" aria-expanded="false" tabindex="0">
+                            <h3>Junior Python Developer</h3>
+                            <h4>Vcube Software Solutions, Hyderabad</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Built web applications and managed development teams for client projects.</p>
+                            <div class="experience-tech"><strong>Technologies:</strong> <span>Python</span>, <span>Django</span>, <span>Docker</span>, <span>JavaScript</span></div>
+                            <ul>
+                                <li>Led 5-member development team after promotion from intern within first month</li>
+                                <li>Increased website traffic by 45% through Django and JavaScript implementation</li>
+                                <li>Built containerized Python IDE web application using Docker technology</li>
+                                <li>Developed training management system for tracking 200+ students across 15+ courses</li>
+                                <li>Resolved 30+ critical bugs improving overall system stability by 75%</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                
+                
             </div>
         </div>
     </section>
@@ -470,13 +464,25 @@
                     <h3>Technologies</h3>
                     <div class="tech-tags">
                         <span>Python</span>
+                        <span>JavaScript</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
                         <span>Django</span>
-                        <span>REST API</span>
+                        <span>Django REST Framework</span>
+                        <span>React.js</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>ReportLab</span>
                         <span>PostgreSQL</span>
                         <span>MySQL</span>
-                        <span>JWT</span>
-                        <span>Docker</span>
                         <span>Git</span>
+                        <span>Docker</span>
+                        <span>JWT</span>
+                        <span>Swagger / drf_yasg</span>
+                        <span>Celery</span>
+                        <span>Web sockets</span>
+                        <span>AWS SES</span>
+                        <span>SMTP</span>
                     </div>
                 </div>
             </div>
@@ -489,3 +495,8 @@
 
 </body>
 </html>
+
+<!-- Scripts loaded at end for faster paint -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="email.js"></script>
+<script src="script.js"></script>
