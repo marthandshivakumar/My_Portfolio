@@ -72,26 +72,43 @@ document.addEventListener('DOMContentLoaded', function() {
         );
     }
     
-    // Animate stats counting
+    // Animate stats counting (supports integers and decimals)
     const statNumbers = document.querySelectorAll('.stat-number');
-    
+
     function animateStats() {
         statNumbers.forEach(number => {
-            const target = parseInt(number.getAttribute('data-count'));
-            const duration = 2000; // Animation duration in ms
-            const step = target / (duration / 16); // 60fps
-            
-            let current = 0;
+            const raw = number.getAttribute('data-count');
+            const isFloat = raw && raw.toString().includes('.');
+            const target = parseFloat(raw) || 0;
+            const duration = 1600; // Animation duration in ms
+            const frameRate = 60; // fps
+            const totalFrames = Math.round((duration / 1000) * frameRate);
+            let frame = 0;
+
             const counter = setInterval(() => {
-                current += step;
-                if (current >= target) {
+                frame++;
+                const progress = frame / totalFrames;
+                const current = target * easeOutCubic(progress);
+
+                if (frame >= totalFrames) {
                     clearInterval(counter);
-                    number.textContent = target + '+';
+                    number.textContent = formatNumber(target, isFloat) + '+';
                 } else {
-                    number.textContent = Math.floor(current);
+                    number.textContent = formatNumber(current, isFloat);
                 }
-            }, 16);
+            }, 1000 / frameRate);
         });
+    }
+
+    function formatNumber(value, isFloat) {
+        if (isFloat) {
+            return (Math.round(value * 10) / 10).toFixed(1);
+        }
+        return Math.floor(value).toString();
+    }
+
+    function easeOutCubic(t) {
+        return 1 - Math.pow(1 - t, 3);
     }
     
     // Intersection Observer for animations
@@ -139,4 +156,51 @@ document.addEventListener('DOMContentLoaded', function() {
     // // Initialize animations
     // animateSkillBars();
     // window.addEventListener('scroll', animateSkillBars);
+
+    // Project flip interaction: toggle .is-flipped on click (for touch) and allow keyboard toggle
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach(card => {
+        // click toggles flip unless clicking a link
+        card.addEventListener('click', (e) => {
+            if (e.target.closest('.project-link') || e.target.closest('.project-actions') || e.target.tagName === 'A') return;
+            card.classList.toggle('is-flipped');
+        });
+
+        // keyboard accessibility: Enter or Space to toggle
+        card.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                card.classList.toggle('is-flipped');
+            }
+        });
+    });
+
+    // Experience: Show All toggle and per-item expand/collapse
+    const expSection = document.querySelector('.experience');
+    const toggleBtn = document.getElementById('toggleExperience');
+    if (toggleBtn && expSection) {
+        toggleBtn.addEventListener('click', () => {
+            const expanded = expSection.classList.toggle('expanded');
+            toggleBtn.textContent = expanded ? 'Hide Details' : 'Show All';
+            toggleBtn.setAttribute('aria-pressed', expanded);
+        });
+    }
+
+    // Per-item header toggle (accessible via Enter/Space and click)
+    document.querySelectorAll('.timeline-head').forEach(head => {
+        const item = head.closest('.timeline-item');
+        head.addEventListener('click', () => {
+            item.classList.toggle('open');
+            const expanded = item.classList.contains('open');
+            head.setAttribute('aria-expanded', expanded);
+        });
+        head.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                item.classList.toggle('open');
+                const expanded = item.classList.contains('open');
+                head.setAttribute('aria-expanded', expanded);
+            }
+        });
+    });
 });
