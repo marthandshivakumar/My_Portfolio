@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#6c63ff" />
+      <stop offset="1" stop-color="#4d44db" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#f6f7fb" />
+  <rect x="80" y="80" width="1040" height="640" rx="20" fill="url(#g)" opacity="0.12" />
+  <g transform="translate(120,200)">
+    <rect width="400" height="280" rx="12" fill="#fff" stroke="#e6e9f8" />
+    <text x="30" y="60" font-family="Poppins, Arial" font-size="28" fill="#222">Madafillate</text>
+    <text x="30" y="110" font-family="Poppins, Arial" font-size="16" fill="#444">Email Marketing CRM</text>
+    <text x="30" y="150" font-family="Poppins, Arial" font-size="14" fill="#666">Gmail · Outlook · AWS SES · SMTP</text>
+  </g>
+  <g transform="translate(560,220)">
+    <rect width="420" height="240" rx="12" fill="#fff" stroke="#e6e9f8" />
+    <text x="30" y="60" font-family="Poppins, Arial" font-size="18" fill="#333">Enterprise-grade CRM for campaign</text>
+    <text x="30" y="100" font-family="Poppins, Arial" font-size="14" fill="#666">Dynamic templates · Scheduling · Billing</text>
+  </g>
+</svg>
